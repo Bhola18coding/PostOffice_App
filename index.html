@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="section-1">
+        <p class="heading">Post Office Application.</p>
+        <p class="description">This Application Allows you to extract information about the nearest Post Offices,
+            based on your location.</p>
+
+        <div>
+            <img src="icons/undraw_messenger_re_8bky 1.svg" alt="">
+        </div>
+    </div>
+
+    <div class="section-2">
+        <div>
+            <p>Your Current IP Address is&nbsp;</p>
+            <p id="ip" style="color: #FFF;"></p>
+        </div>
+
+        <a href="postOffice.html"><button>Get Started</button></a>
+    </div>
+
+    <script>
+        fetch('https://api.ipify.org?format=json')
+            .then((response) => response.json())
+            .then((data) => {
+                document.getElementById("ip").innerHTML = data.ip;
+            })
+            .catch((error) => {
+                alert("Please Disable your anti-virus to work this site!");
+            })
+    </script>
+</body>
+
+</html>

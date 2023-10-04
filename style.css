@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
+.section-1 {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1rem;
+}
+
+.heading {
+    color: #575A85;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.description {
+    color: #B8BCCC;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-1>div {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section-1>div>img {
+    width: 80%;
+}
+
+.section-2 {
+    width: 56%;
+    background: #575A85;
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2>div {
+    color: #B8BCCC;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    width: 20vw;
+    height: 8vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #B8BCCC;
+    color: #B8BCCC;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: transparent;
+    transition: all 0.1s ease-in;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid #d6dbeb;
+    color: #d6dbeb;
+}
+
+button:focus {
+    scale: 95%;
+}
